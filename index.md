@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/615c163931.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#submit').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value != '') {
+                        document.querySelector('#feedback').innerHTML = 'Thanks for visiting, ' + input.value + '!';
+                    }
+                    else {
+                        document.querySelector('#feedback').innerHTML = 'Thanks for visiting!';
+                    }
+                })
+            })
+        </script>
+        <title>My Homepage</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+             <a class="navbar-brand" href="/index.html">Home</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/family.html">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/goals.html">Goals</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+                <img src="/images/maskCake.JPG" alt="mask cake" style="height: 450px;">
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="card">
+              <h2>Hi everyone! I'm Krystal!</h2>
+              <br>
+              <p>Hello, all. I'm starting my programming career over after 20 years of raising a family. I am loving this class.</p>
+              <p>I can't wait to start working and showing my five boys what this momma can do.</p>
+              <p>Balancing a large family with classes and job searching is tough, but nothing I can't handle.</p>
+              <br><br><br>
+              <input placeholder = "First Name" type=text>
+              <button id="submit">Submit</button>
+              <br>
+              <p id="feedback" style="font-size: 18px;"></p>
+              <h4 class="wsite-content-title">Connect</h4>
+              <div class="paragraph">
+                <a href="http://www.facebook.com/krystalhulme" target="fab fa-facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/krystal-hulme-35b569b3" target="fab fa=linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <br>
+          <span class="li-footer__copy-text">&copy; 2021</span>
+        </div>
+    </body>
+</html>
