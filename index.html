@@ -8,19 +8,7 @@
         <script src="https://kit.fontawesome.com/615c163931.js" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                document.querySelector('#submit').addEventListener('click', function() {
-                    let input = document.querySelector('input');
-                    if (input.value != '') {
-                        document.querySelector('#feedback').innerHTML = 'Thanks for visiting, ' + input.value + '!';
-                    }
-                    else {
-                        document.querySelector('#feedback').innerHTML = 'Thanks for visiting!';
-                    }
-                })
-            })
-        </script>
+       
         <title>My Homepage</title>
     </head>
     <body>
@@ -52,7 +40,7 @@
         <div class="row">
           <div class="leftcolumn">
             <div class="card">
-                <img src="/images/maskCake.JPG" alt="mask cake" style="height: 450px;">
+                
             </div>
           </div>
           <div class="rightcolumn">
@@ -63,10 +51,6 @@
               <p>I can't wait to start working and showing my five boys what this momma can do.</p>
               <p>Balancing a large family with classes and job searching is tough, but nothing I can't handle.</p>
               <br><br><br>
-              <input placeholder = "First Name" type=text>
-              <button id="submit">Submit</button>
-              <br>
-              <p id="feedback" style="font-size: 18px;"></p>
               <h4 class="wsite-content-title">Connect</h4>
               <div class="paragraph">
                 <a href="http://www.facebook.com/krystalhulme" target="fab fa-facebook"><i class="fab fa-facebook fa-2x"></i></a>
